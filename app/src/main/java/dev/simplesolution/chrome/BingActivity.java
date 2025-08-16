@@ -1,4 +1,4 @@
-package dev.simplesolution.chrome;
+package com.example.chrome;
 
 import android.view.View;
 import android.annotation.SuppressLint;

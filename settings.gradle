@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ionic"
+rootProject.name = "chrome"
 include ':app'

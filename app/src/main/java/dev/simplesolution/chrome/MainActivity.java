@@ -1,4 +1,4 @@
-package dev.simplesolution.chrome;
+package com.example.chrome;
 
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -26,7 +26,7 @@ import android.widget.Button;
 import android.view.View;
 import java.util.Arrays; 
 import android.widget.Toast;
-import dev.simplesolution.chrome.BingActivity;
+import com.example.chrome.BingActivity;
  
 // import dev.simplesolution.chrome.FileLogger;
 

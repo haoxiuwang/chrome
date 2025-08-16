@@ -1,4 +1,4 @@
-package dev.simplesolution.chrome;
+package com.example.chrome;
 
 import java.util.Arrays;
 import java.util.Objects;
