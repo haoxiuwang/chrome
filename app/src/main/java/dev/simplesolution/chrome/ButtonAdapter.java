@@ -1,4 +1,4 @@
-package dcom.example.chrome;
+package com.example.chrome;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
