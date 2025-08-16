@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class BingActivity extends AppCompatActivity {
     private WebView webView;
-    private Button bntReturn;
+    private Button btnReturn;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -21,8 +21,14 @@ public class BingActivity extends AppCompatActivity {
       
         setContentView(R.layout.activity_bing);
         webView = findViewById(R.id.bingDict);
-        bntReturn = findViewById(R.id.btnReturn);
-        
+        btnReturn = findViewById(R.id.btnReturn);
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 处理返回逻辑
+                finish();
+            }
+        });
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);

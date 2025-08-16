@@ -10,7 +10,19 @@
         android:id="@+id/btnReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Favorite"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:gravity="center"
         android:padding="8dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottomSpacer"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 用于定位按钮距离底部50px的不可见视图 -->
+    <View
+        android:id="@+id/bottomSpacer"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
