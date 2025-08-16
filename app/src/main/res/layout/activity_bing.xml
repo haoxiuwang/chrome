@@ -6,23 +6,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/btnReturn"/>
-    <Button
+     <Button
         android:id="@+id/btnReturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75%"
+        android:layout_height="48dp"
         android:text="返回"
         android:textColor="@android:color/white"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:gravity="center"
-        android:padding="8dp"
+        android:background="@drawable/round_blue_button"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/bottomSpacer"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- 用于定位按钮距离底部50px的不可见视图 -->
-    <View
-        android:id="@+id/bottomSpacer"
-        android:layout_width="1dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="16sp"/>    
+    
 </RelativeLayout>
