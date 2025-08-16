@@ -27,7 +27,7 @@ import android.view.View;
 import java.util.Arrays; 
 import android.widget.Toast;
 import com.example.chrome.BingActivity;
- 
+import android.window.OnBackInvokedDispatcher;
 
 public class MainActivity extends AppCompatActivity 
     implements ButtonAdapter.OnButtonClickListener{
@@ -128,6 +128,14 @@ public class MainActivity extends AppCompatActivity
             // Toast.makeText(MainActivity.this, "显示收藏", Toast.LENGTH_SHORT).show();
             return true; // 返回true表示已消费事件
         });
+
+        getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
+            OnBackInvokedDispatcher.PRIORITY_DEFAULT,
+            () -> {
+                
+                finish();
+            }            
+        );
         // 在 WebView 中打开链接
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {

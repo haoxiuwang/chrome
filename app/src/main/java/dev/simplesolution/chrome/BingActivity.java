@@ -7,7 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.webkit.WebViewClient;
-
+import android.window.OnBackInvokedDispatcher;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BingActivity extends AppCompatActivity {
@@ -26,7 +26,7 @@ public class BingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 处理点击事件
-                super.onBackPressed();
+                finish();
             }
         });
         WebSettings settings = webView.getSettings();
@@ -40,11 +40,15 @@ public class BingActivity extends AppCompatActivity {
 
         String url = getIntent().getStringExtra("url");        
         webView.loadUrl(url);
-        
+        getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
+            OnBackInvokedDispatcher.PRIORITY_DEFAULT,
+            () -> {
+               
+                finish();
+            }
+            
+        );
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
+    
 }
