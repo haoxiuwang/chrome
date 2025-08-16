@@ -22,13 +22,7 @@ public class BingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bing);
         webView = findViewById(R.id.bingDict);
         bntReturn = findViewById(R.id.bntReturn);
-        setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 处理点击事件
-                finish();
-            }
-        });
+        
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);

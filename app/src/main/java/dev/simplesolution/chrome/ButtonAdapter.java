@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.Toast;
-import dev.simplesolution.chrome.LocalMemory;
+import com.example.chrome.LocalMemory;
 import java.net.URL;
 import java.net.MalformedURLException;
 
