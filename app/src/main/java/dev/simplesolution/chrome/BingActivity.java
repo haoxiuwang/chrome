@@ -21,7 +21,7 @@ public class BingActivity extends AppCompatActivity {
       
         setContentView(R.layout.activity_bing);
         webView = findViewById(R.id.bingDict);
-        bntReturn = findViewById(R.id.bntReturn);
+        bntReturn = findViewById(R.id.btnReturn);
         
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
