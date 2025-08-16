@@ -16,8 +16,8 @@ import android.os.Handler;
 import android.content.Intent;
 import android.net.Uri;
 import android.webkit.WebResourceRequest;
-import dev.simplesolution.chrome.LocalMemory;
-import dev.simplesolution.chrome.ButtonAdapter;
+import com.example.chrome.LocalMemory;
+import com.example.chrome.ButtonAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import java.util.List; 
@@ -28,7 +28,6 @@ import java.util.Arrays;
 import android.widget.Toast;
 import com.example.chrome.BingActivity;
  
-// import dev.simplesolution.chrome.FileLogger;
 
 public class MainActivity extends AppCompatActivity 
     implements ButtonAdapter.OnButtonClickListener{
