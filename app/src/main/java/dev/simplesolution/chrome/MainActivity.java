@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity
                 if (url.contains("bing")&&url.contains("dict")) {
                     // 使用 Intent 在外部浏览器打开
                     Intent intent = new Intent(MainActivity.this, BingActivity.class);
-                    intent.putExtra("url", "https://cn.bing.com/dict");
+                    intent.putExtra("url", url);
                     startActivity(intent);
                     return true; // 拦截，不交给 WebView 处理
                 }
